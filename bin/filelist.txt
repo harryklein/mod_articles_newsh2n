@@ -1,0 +1,11 @@
+./mod_articles_news.php
+./mod_articles_news.xml
+./tmpl/default.php
+./tmpl/horizontal.php
+./tmpl/_item.php
+./helper.php
+./index.html
+./en-GB.mod_articles_news.sys.ini
+./en-GB.mod_articles_news.ini
+./de-DE.mod_articles_news.sys.ini
+./de-DE.mod_articles_news.ini
