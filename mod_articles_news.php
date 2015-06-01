@@ -15,4 +15,4 @@ require_once __DIR__ . '/helper.php';
 $list            = ModArticlesNewsHelper::getList($params);
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
 
-require JModuleHelper::getLayoutPath('mod_articles_news', $params->get('layout', 'horizontal'));
+require JModuleHelper::getLayoutPath('mod_articles_news_h2n', $params->get('layout', 'horizontal'));
