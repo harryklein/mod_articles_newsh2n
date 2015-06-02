@@ -143,6 +143,15 @@
 					<option value="0">JGLOBAL_ORDER_ASCENDING</option>
 					<option value="1">JGLOBAL_ORDER_DESCENDING</option>
 				</field>
+				
+				<field
+					type="textarea"
+					name="pretext"
+					rows="5"
+					cols="10"
+					label="MOD_ARTICLES_NEWS_H2N_FIELD_PRETEXT_LABEL"
+					description="MOD_ARTICLES_NEWS_H2N_FIELD_PRETEXT_DESC">
+				</field>
 			</fieldset>
 
 			<fieldset name="advanced">
@@ -151,6 +160,18 @@
 					type="modulelayout"
 					label="JFIELD_ALT_LAYOUT_LABEL"
 					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
+
+				<field
+					name="colums"
+					type="list"
+					default="2"
+					label="MOD_ARTICLES_NEWS_H2N_COLUMNS"
+					description="MOD_ARTICLES_NEWS_H2N_COLUMNS_DESCRIPTION" >
+					<option value="1">1</option>
+					<option value="2">2</option>
+					<option value="3">3</option>
+					<option value="4">4</option>
+				</field>
 
 				<field
 					name="moduleclass_sfx"
