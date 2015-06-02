@@ -9,10 +9,10 @@
 
 defined('_JEXEC') or die;
 
-// Include the syndicate functions only once
 require_once __DIR__ . '/helper.php';
 
 $list            = ModArticlesNewsHelper::getList($params);
 $moduleclass_sfx = htmlspecialchars($params->get('moduleclass_sfx'));
+$columns         = $params->get('columns',3);
 
 require JModuleHelper::getLayoutPath('mod_articles_news_h2n', $params->get('layout', 'horizontal'));
