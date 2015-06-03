@@ -1,17 +1,24 @@
 <?php
 /**
- * Articles Newsflash Advanced
+ * @package     Joomla.Site
+ * @subpackage  mod_articles_newsh2n
  *
+ * @author    Harry Klein
  * @author    TemplateMonster http://www.templatemonster.com
+ * @copyright Copyright (C) 2015 Harry Klein
  * @copyright Copyright (C) 2012 - 2013 Jetimpex, Inc.
  * @license   http://www.gnu.org/licenses/gpl-2.0.html GNU/GPLv2 
- * Parts of this software are based on Articles Newsflash standard module
+ * 
  * 
  */
 defined('_JEXEC') or die();
+
 $n = count($list);
 
-$columns = 2;
+$document = JFactory::getDocument();
+$baseUrl = JURI::base() . 'modules/mod_articles_newsh2n/';
+$document->addStyleSheet($baseUrl . 'css/style.css');
+
 ?>
 
 <div
@@ -22,25 +29,27 @@ $columns = 2;
       <?php echo $params->get('pretext')?>
     </div>
   <?php endif; ?>      
-    <div class="mod-newsflash-adv_row">  
+    <div>  
       <?php
     
-for ($i = 0, $n; $i < $n; $i ++) :
+    for ($i = 0, $n; $i < $n; $i ++) :
         $item = $list[$i];
         
-        $class = "";
-        if ($i == $n - 1) {
-            $class = "lastItem";
+        if ($n - 1 < $columns) {
+            $columns = $n - 1;
         }
         
-        if ($i == 0) {
-            $width = 100 - 1;
+        // nur die letzen $culmnns Einträge nebeneinander darstellen, den ersten bzw. die ersten
+        // immer in einer Spalte
+        if ($i == 0 || ($n - $i) > $columns) {
+            $class = "news-columns1";
         } else {
-            $width = 100 / $columns - 1;
+            $class = "news-columns$columns";
         }
         ?>
-        <div class="item item_num<?php echo $i; ?> item__module  <?php echo $class; ?>" style="padding-right:1%; width:<?php echo $width; ?>%; float: left;">
-          <?php require JModuleHelper::getLayoutPath('mod_articles_news_h2n', '_item'); ?>
+        <div
+			class="item item_num<?php echo $i; ?> <?php echo $class; ?>">
+          <?php require JModuleHelper::getLayoutPath('mod_articles_newsh2n', '_item'); ?>
         </div>
       <?php endfor; ?>
     </div>
