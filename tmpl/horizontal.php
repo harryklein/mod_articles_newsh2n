@@ -1,15 +1,17 @@
 <?php
 /**
  * @package     Joomla.Site
- * @subpackage  mod_articles_news
+ * @subpackage  mod_articles_newsh2n
  *
+ * @copyright   Copyright (C) 2015 Harry Klein All rights reserved.
  * @copyright   Copyright (C) 2005 - 2015 Open Source Matters, Inc. All rights reserved.
  * @license     GNU General Public License version 2 or later; see LICENSE.txt
  */
 
-defined('_JEXEC') or die;
+defined('_JEXEC') or die();
 ?>
-<ul class="newsflash-horiz<?php echo $params->get('moduleclass_sfx'); ?>">
+<ul
+	class="newsflash-horiz<?php echo $params->get('moduleclass_sfx'); ?>">
 	<?php for ($i = 0, $n = count($list); $i < $n; $i ++) : ?>
 		<?php $item = $list[$i]; ?>
 		<li>
