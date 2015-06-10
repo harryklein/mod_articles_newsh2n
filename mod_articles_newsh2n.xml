@@ -1,12 +1,14 @@
 <?xml version="1.0" encoding="utf-8"?>
 <extension type="module" version="3.1" client="site" method="upgrade">
 	<name>MOD_ARTICLES_NEWSH2N</name>
+	<author>Harry Klein</author>
 	<author>Joomla! Project</author>
 	<creationDate>DATE</creationDate>
+	<copyright>Copyright (C) 2015 Harry Klein </copyright>
 	<copyright>Copyright (C) 2005 - 2015 Open Source Matters. All rights reserved.</copyright>
 	<license>GNU General Public License version 2 or later; see LICENSE.txt</license>
-	<authorEmail>admin@joomla.org</authorEmail>
-	<authorUrl>www.joomla.org</authorUrl>
+	<authorEmail>harry.klein@joomla-hklein.de</authorEmail>
+	<authorUrl>www.joomla-hklein.de</authorUrl>
 	<version>HEAD</version>
 	<description>MOD_ARTICLES_NEWSH2N_XML_DESCRIPTION</description>
 	<files>
@@ -23,6 +25,9 @@
 		<language tag="de-DE">language/de-DE/de-DE.mod_articles_newsh2n.sys.ini</language>
 	</languages>
 	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_ARTICLES_NEWSFLASH" />
+	<updateservers>
+		<server type="extension" priority="1" name="Mosimage Update Site">http://www.joomla-hklein.de/upload/mod_articles_newsh2n-update.xml</server>
+	</updateservers>
 	<config>
 		<fields name="params">
 			<fieldset name="basic">
