@@ -54,6 +54,6 @@ $document->addStyleSheet($baseUrl . 'css/style.css');
       <?php endfor; ?>
     </div>
 
-	<div class="clearfix"></div>
+	<div class="newsflash-multicolumn-clearfix"></div>
 
 </div>
