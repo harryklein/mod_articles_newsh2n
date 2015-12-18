@@ -26,7 +26,7 @@
 	</languages>
 	<help key="JHELP_EXTENSIONS_MODULE_MANAGER_ARTICLES_NEWSFLASH" />
 	<updateservers>
-		<server type="extension" priority="1" name="Mosimage Update Site">http://www.joomla-hklein.de/upload/mod_articles_newsh2n-update.xml</server>
+		<server type="extension" priority="1" name="Modul Articles News H2N Update Site">http://mosimage3-demo.joomla-hklein.de/upload/mod_articles_newsh2n-update-stable.xml</server>
 	</updateservers>
 	<config>
 		<fields name="params">
@@ -60,7 +60,7 @@
 					name="item_title"
 					class="btn-group btn-group-yesno"
 					type="radio"
-					default="0"
+					default="1"
 					label="MOD_ARTICLES_NEWS_FIELD_TITLE_LABEL"
 					description="MOD_ARTICLES_NEWS_FIELD_TITLE_DESC"
 				>
@@ -164,13 +164,14 @@
 				<field
 					name="layout"
 					type="modulelayout"
+					default="_:multicolumn" 
 					label="JFIELD_ALT_LAYOUT_LABEL"
 					description="JFIELD_ALT_MODULE_LAYOUT_DESC" />
 
 				<field
 					name="colums"
 					type="list"
-					default="2"
+					default="3"
 					label="MOD_ARTICLES_NEWSH2N_COLUMNS"
 					description="MOD_ARTICLES_NEWSH2N_COLUMNS_DESCRIPTION" >
 					<option value="1">1</option>
